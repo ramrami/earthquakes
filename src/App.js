@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-100 w-full h-full">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/earthquake/:earthquakeId" element={<Earthquake />} />
