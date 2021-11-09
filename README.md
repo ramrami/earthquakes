@@ -1,3 +1,13 @@
+## How I would finish this project
+
+- Add sort by date & name
+- display magnitude graphically
+- Display the info page on click
+- Add the timer to check if an earthquake happened today
+- Better styles
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
