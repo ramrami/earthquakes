@@ -6,7 +6,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
 import App from './App';
-import { store } from './app/store';
+import { store } from './store';
 import './index.css';
 
 ReactDOM.render(
