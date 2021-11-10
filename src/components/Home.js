@@ -29,7 +29,6 @@ export default function Home() {
 
     const [focusedInput, setFocusedInput] = useState(null);
     const [hasError, setHasError] = useState(false);
-    // const [sortOption, setSortOption] = useState(sortOptions.find(o => o.value === "newest"));
 
     const setDates = ({ startDate, endDate }) => {
         dispatch(setStartDate(startDate));
