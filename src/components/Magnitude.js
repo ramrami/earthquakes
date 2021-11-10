@@ -8,43 +8,43 @@ export default function Magnitude({value}) {
 
     switch (intValue) {
         case 1:
-            color = "green-600";
+            color = "bg-green-600";
             label = "Micro";
             break;
         case 2:
-            color = "green-300";
+            color = "bg-green-300";
             label = "Minor";
             break;
         case 3:
-            color = "yellow-300";
+            color = "bg-yellow-300";
             label = "Minor";
             break;
         case 4:
-            color = "yellow-400";
+            color = "bg-yellow-400";
             label = "Light";
             break;
         case 5:
-            color = "yellow-600";
+            color = "bg-yellow-600";
             label = "Moderate";
             break;                                
         case 6:
-            color = "red-400";
+            color = "bg-red-400";
             label = "Strong";
             break;
         case 7:
-            color = "red-600";
+            color = "bg-red-600";
             label = "Major";
             break;
         case 8:
-            color = "fuchsia-500";
+            color = "bg-fuchsia-500";
             label = "Great";
             break;
         case 9:
-            color = "fuchsia-700";
+            color = "bg-fuchsia-700";
             label = "Great";
             break;                                            
         default:
-            color = "green-600";
+            color = "bg-green-600";
             label = "Micro";            
             break;
     }
@@ -52,7 +52,7 @@ export default function Magnitude({value}) {
     return (
         <div className="flex" title={`${value} - ${label}`}>
             {[...Array(9).keys()].map((key, i) => {
-                return <span key={key} className={(i+1) <= intValue || i === 0 ? `w-2 h-4 mr-1 bg-${color}`: "w-2 h-4 mr-1 bg-gray-200"}></span>
+                return <span key={key} className={(i+1) <= intValue || i === 0 ? `w-2 h-4 mr-1 ${color}`: "w-2 h-4 mr-1 bg-gray-200"}></span>
             })}
         </div>
     )
